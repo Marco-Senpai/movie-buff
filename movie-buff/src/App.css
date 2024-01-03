@@ -2,14 +2,16 @@ body {
   background: #141414;
   color: #ffffff;
 }
+
 .movie-app > .row {
-  overflow-x:auto;
-  flex-wrap:nowrap;
+  scroll-behavior: smooth;
+  display: inline-flex;
+  inline-size: 100em;
+
 }
 
-
 .image-container {
-  position: relative;
+  position:relative;
   transition: transform 0.2s;
 }
 
@@ -21,6 +23,7 @@ body {
 .image-container:hover .overlay {
   opacity: 1;
 }
+
 .overlay {
   position:absolute;
   background: rgba(0,0,0,0.8);
@@ -28,13 +31,16 @@ body {
   transition: 0.5s ease;
   opacity: 0;
   bottom: 0;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 10px;
   text-align: center;
+  color: white;
+
 }
 
-.col {
-
+span {
+  color: red;
+  size: 10em;
 }
 
 
